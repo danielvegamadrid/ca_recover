@@ -12,7 +12,6 @@ const util = require('util');
 
 
 const jwtSignature =
-    const jwtSignature =
     "Hw1kLz_GWTeQ_V9_XMhxri0umqJuefZ7_sPbEUAc1n4e9xV0Gyf3i1a6WGxiIlhkvJtqOcH6TvVY0rQkTppIimWozshQTQ7qUsaljWpSDhusj7BhYdjS_Ok13yFTC-em8s2cq-m-DpnuB8X13eXFMSjCGfqq7SXG3sJPAGBi5-eUa-L02fK7c48ecxu9IZTBdPRUuS7x5b60TBmivMp0z0zNz2ChPOu61kl5QgOoNptxJMPn3qLnQrBcd-eKBA2";
 /*const jwtSignature = process.env.JB_APP_SIGNATURE;
 const client_id = process.env.client_id;
