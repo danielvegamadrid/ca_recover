@@ -93,7 +93,7 @@ define(["postmonger"], function (Postmonger) {
                 }
             }
         }
-      payload['arguments'].execute.url = "https://ca-jwt.herokuapp.com/journeybuilder/execute";
+      payload['arguments'].execute.url = "https://ca-recover.vercel.app/journeybuilder/execute";
       payload["arguments"].execute.inArguments = [
           {
               //Event Entry
