@@ -1,0 +1,64 @@
+{
+    "key": "ab1044ff-7a4f-4d5a-94ce-8561cc617666",
+    "workflowApiVersion": "1.1",
+    "metaData": {
+        "icon": "images/icon.png",
+        "iconSmall": "images/iconSmall.png",
+        "category": "message"
+    },
+    "type": "REST",
+    "lang": {
+        "en-US": {
+            "name": "CAPTURA JWT de SFMC",
+            "description": "powered by BMIND 2020"
+        }
+    },
+    "arguments": {
+        "execute": {
+            "inArguments": [],
+            "outArguments": [],
+            "url": "",
+            "useJwt": true
+        }
+    },
+    "configurationArguments": {
+        "applicationExtensionKey": "ab1044ff-7a4f-4d5a-94ce-8561cc617666",
+        "save": {
+            "url": "https://ca-jwt.herokuapp.com/journeybuilder/save",
+            "useJwt": true
+        },
+        "publish": {
+            "url": "https://ca-jwt.herokuapp.com/journeybuilder/publish",
+            "useJwt": true
+        },
+        "validate": {
+            "url": "https://ca-jwt.herokuapp.com/journeybuilder/validate",
+            "useJwt": true
+        },
+        "stop": {
+            "url": "https://ca-jwt.herokuapp.com/journeybuilder/stop",
+            "useJwt": true
+        }
+    },
+    "wizardSteps": [
+        {
+            "label": "Config",
+            "key": "step1"
+        }
+    ],
+    "userInterfaces": {
+        "configModal": {
+            "height": 300,
+            "width": 300,
+            "fullscreen": true
+        }
+    },
+    "schema": {
+        "arguments": {
+            "execute": {
+                "inArguments": [],
+                "outArguments": []
+            }
+        }
+    }
+}

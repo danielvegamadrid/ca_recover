@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>AngularProject</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="text/javascript" src="../src/custom/js/require.js"></script>
+  <script type="text/javascript">
+    (function () {
+      var config = {
+        baseUrl: "js",
+      };
+
+      var dependencies = ["customActivity"];
+
+      require(config, dependencies);
+    })();
+  </script>
+</head>
+<header>
+  <div>
+    
+  </div>
+</header>
+
+<body>
+  <app-root></app-root>
+
+  <body>
+    <form (ngSubmit)="onSubmit()">
+
+      <div class="content" role="main">
+
+        <!-- Resources -->
+        <div class="container">
+
+          <h2>EventLeadReceiverItem</h2>
+
+          <div class="card-container">
+            <label for="crmLeadId" class="form-label">CRM ID (LEADCANDIA):</label>
+            <input type="text" class="form-control" name="crmLeadId" id="crmLeadId" aria-describedby="helpId"
+              placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="marketingToolId" class="form-label">"Selligent ID" (EXT_ID):</label>
+            <input type="text" class="form-control" name="marketingToolId" id="marketingToolId"
+              aria-describedby="helpId" placeholder="" required>
+          </div>
+          <div class="card-container">
+            <label for="leadPriority" class="form-label">Prioridade da lead:</label>
+            <input type="text" class="form-control" name="leadPriority" id="leadPriority" aria-describedby="helpId"
+              placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="leadType" class="form-label">Nome da ContactList na Genesys:</label>
+            <input type="text" class="form-control" name="leadType" id="leadType" aria-describedby="helpId"
+              placeholder="" required>
+          </div>
+          <div class="card-container">
+            <label for="campaignCode" class="form-label">Identificador/código da campanha:</label>
+            <input type="text" class="form-control" name="campaignCode" id="campaignCode" aria-describedby="helpId"
+              placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="campaignDescription" class="form-label">"Nome campanha" para o script/report/log:</label>
+            <input type="text" class="form-control" name="campaignDescription" id="campaignDescription"
+              aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="createDate" class="form-label">Data de criação:</label>
+            <input type="text" class="form-control" name="createDate" id="createDate" aria-describedby="helpId"
+              placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="expirationDate" class="form-label">Data de expiração:</label>
+            <input type="text" class="form-control" name="expirationDate" id="expirationDate" aria-describedby="helpId"
+              placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="state" class="form-label">Estado da lead* (fixed, always 0):</label>
+            <input type="text" class="form-control" name="state" id="state" aria-describedby="helpId" placeholder=""
+              required>
+          </div>
+          <div class="card-container">
+            <label for="firstContactDate" class="form-label">Data de 1.º Contato:</label>
+            <input type="text" class="form-control" name="firstContactDate" id="firstContactDate"
+              aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="lastContactDate" class="form-label">Data último contato:</label>
+            <input type="text" class="form-control" name="lastContactDate" id="lastContactDate"
+              aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="lastContactAgent" class="form-label">Último gestor do contacto:</label>
+            <input type="text" class="form-control" name="lastContactAgent" id="lastContactAgent"
+              aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="scheduleContactDate" class="form-label">Data agendamento contato:</label>
+            <input type="text" class="form-control" name="scheduleContactDate" id="scheduleContactDate"
+              aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="endChannel" class="form-label">Canal de formalização de lead:</label>
+            <input type="text" class="form-control" name="endChannel" id="endChannel" aria-describedby="helpId"
+              placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="comments" class="form-label">Observações:</label>
+            <input type="text" class="form-control" name="comments" id="comments" aria-describedby="helpId"
+              placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="clientData" class="form-label">"ClientData" object to support client data:</label>
+            <input type="text" class="form-control" name="clientData" id="clientData" aria-describedby="helpId"
+              placeholder="" required>
+          </div>
+          <div class="card-container">
+            <label for="leadData" class="form-label">"LeadData" object to support lead business data:</label>
+            <input type="text" class="form-control" name="leadData" id="leadData" aria-describedby="helpId"
+              placeholder="" required>
+          </div>
+
+        </div>
+
+        <!-- Resources -->
+        <div class="container">
+
+          <h2>ClientData</h2>
+
+          <div class="card-container">
+            <label for="" class="form-label">clientNumber:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">clientName:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">clientPhone:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">hasDigitalAccess:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">clientBirthdate:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">clientNIF:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">clientEmail:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="container">
+
+          <h2>LeadData</h2>
+
+          <div class="card-container">
+            <label for="" class="form-label">leadName:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">simulationAmount:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">triad:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">isDomiciledSalary:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">product:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">incidences:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">scoring:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">clientPartenon:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">nbo1:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">nbo2:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">nbo3:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">nbo4:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">nbo5:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">clientBranch:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">clientManager:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">leadCan:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">productFamily:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">engineLeadExpirationDate:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">operationDate:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">term:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">hasLifeInsurance:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">hasPPInsurance:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">hasAggregatedCharges:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">processId:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">field1:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">field2:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">field3:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">field4:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">field5:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">field6:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">field7:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">field8:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">field9:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+          <div class="card-container">
+            <label for="" class="form-label">field10:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </div>
+        </div>
+
+      </div>
+    </form>
+
+  </body>
+
+</html>
