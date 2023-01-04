@@ -1,5 +1,5 @@
 {
-    "key": "ab1044ff-7a4f-4d5a-94ce-8561cc617666",
+    "key": "fb36e964-430c-4408-8194-a16056801dc6",
     "workflowApiVersion": "1.1",
     "metaData": {
         "icon": "images/icon.png",
@@ -10,7 +10,7 @@
     "lang": {
         "en-US": {
             "name": "CAPTURA JWT de SFMC",
-            "description": "powered by BMIND 2020"
+            "description": "2022"
         }
     },
     "arguments": {
@@ -22,21 +22,21 @@
         }
     },
     "configurationArguments": {
-        "applicationExtensionKey": "ab1044ff-7a4f-4d5a-94ce-8561cc617666",
+        "applicationExtensionKey": "fb36e964-430c-4408-8194-a16056801dc6",
         "save": {
-            "url": "https://ca-jwt.herokuapp.com/journeybuilder/save",
+            "url": "https://ca-recover.vercel.app/journeybuilder/save",
             "useJwt": true
         },
         "publish": {
-            "url": "https://ca-jwt.herokuapp.com/journeybuilder/publish",
+            "url": "https://ca-recover.vercel.app/journeybuilder/publish",
             "useJwt": true
         },
         "validate": {
-            "url": "https://ca-jwt.herokuapp.com/journeybuilder/validate",
+            "url": "https://ca-recover.vercel.app/journeybuilder/validate",
             "useJwt": true
         },
         "stop": {
-            "url": "https://ca-jwt.herokuapp.com/journeybuilder/stop",
+            "url": "https://ca-recover.vercel.app/journeybuilder/stop",
             "useJwt": true
         }
     },
