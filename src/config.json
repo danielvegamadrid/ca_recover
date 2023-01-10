@@ -1,0 +1,64 @@
+{
+    "key": "fb36e964-430c-4408-8194-a16056801dc6",
+    "workflowApiVersion": "1.1",
+    "metaData": {
+        "icon": "images/icon.png",
+        "iconSmall": "images/iconSmall.png",
+        "category": "message"
+    },
+    "type": "REST",
+    "lang": {
+        "en-US": {
+            "name": "CAPTURA JWT de SFMC",
+            "description": "2022"
+        }
+    },
+    "arguments": {
+            "execute": {
+                "inArguments": [],
+                "outArguments": [],
+                "url": "https://ca-capture.herokuapp.com/journeybuilder/execute",
+                "useJwt": true
+            }
+    },
+    "configurationArguments": {
+        "applicationExtensionKey": "fb36e964-430c-4408-8194-a16056801dc6",
+        "save": {
+            "url": "https://ca-capture.herokuapp.com/journeybuilder/save",
+            "useJwt": true
+        },
+        "publish": {
+            "url": "https://ca-capture.herokuapp.com/journeybuilder/publish",
+            "useJwt": true
+        },
+        "validate": {
+            "url": "https://ca-capture.herokuapp.com/journeybuilder/validate",
+            "useJwt": true
+        },
+        "stop": {
+            "url": "https://ca-capture.herokuapp.com/journeybuilder/stop",
+            "useJwt": true
+        }
+    },
+    "wizardSteps": [
+        {
+            "label": "Config",
+            "key": "step1"
+        }
+    ],
+    "userInterfaces": {
+        "configModal": {
+            "height": 300,
+            "width": 300,
+            "fullscreen": true
+        }
+    },
+    "schema": {
+        "arguments": {
+            "execute": {
+                "inArguments": [],
+                "outArguments": []
+            }
+        }
+    }
+}
