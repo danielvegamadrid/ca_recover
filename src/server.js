@@ -8,7 +8,7 @@ function requireHTTPS(req, res, next) {
 
 const express = require('express');
 const app = express();
-app.use(express.static('./'));
+app.use(express.static('public'));
 app.get('/*', function (req, res) {
     const path = require('path');
     res.sendFile('src/index.html', { root: './' }
