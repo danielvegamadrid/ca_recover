@@ -7,7 +7,6 @@
   "scripts": {
     "ng": "ng",
     "start": "npm run serve",
-    "serve": "concurrently -c \"cyan,magenta\" \"npm:serve:api\" \"npm:serve:app\"",
     "serve:app": "ng serve",
     "serve:api": "node ./api/api-server.js",
     "build": "ng build",
