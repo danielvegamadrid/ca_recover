@@ -1,4 +1,0 @@
-diff a/Procfile b/Procfile	(rejected hunks)
-@@ -0,0 +1 @@
-+web: node src/server.js
-\ No newline at end of file
