@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
+      { path: 'leads', component: AppComponent }
     ])
   ],
   providers: [],
