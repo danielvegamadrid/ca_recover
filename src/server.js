@@ -17,8 +17,17 @@ app.use(express.static(__dirname + 'dist', {index: false}))
 // app.get('/', function(req, res) {
 //     res.sendFile(path.join(__dirname, 'src', 'index.html'));
 // });
-app.get('/*', function (req, res) {
-     res.sendFile('src/index.html', { root: './' }
-     );
+
+const path = require('path');
+// ...
+// For all GET requests, send back index.html
+// so that PathLocationStrategy can be used
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname + '/dist/index.html'), { root: './' });
 });
+
+// app.get('/*', function (req, res) {
+//      res.sendFile('src/index.html', { root: './' }
+//      );
+// });
 app.listen(process.env.PORT || 8080);
