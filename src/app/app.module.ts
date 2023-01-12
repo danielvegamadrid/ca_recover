@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-    ]),
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
