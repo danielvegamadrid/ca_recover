@@ -4,21 +4,15 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LeadsComponent } from './leads/leads.component';
-import { ConfigJsonComponent } from './config-json/config-json.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LeadsComponent,
-    ConfigJsonComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      { path: 'leads', component: LeadsComponent },
-      { path: 'leads/config.json', component: ConfigJsonComponent },
     ]),
   ],
   providers: [],
