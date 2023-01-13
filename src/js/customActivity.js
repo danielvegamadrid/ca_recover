@@ -61,7 +61,6 @@ define(["postmonger"], function (Postmonger) {
 
             $('#campaignDescription').val(data["arguments"]["execute"]["inArguments"][0]["campaignDescription"]);
 
-            $('#priority').val(data["arguments"]["execute"]["inArguments"][0]["priority"]);
             $('#campaingCode').val(data["arguments"]["execute"]["inArguments"][0]["campaingCode"]);
             $('#productFamily').val(data["arguments"]["execute"]["inArguments"][0]["productFamily"]);
 
@@ -172,8 +171,6 @@ define(["postmonger"], function (Postmonger) {
                 comments: $("#comments").val(),
                 campaignDescription: $('#campaignDescription').val(),
                 campaingCode: $("#campaingCode").val(),
-                priority: $("#priority").val(),
-
                 //Frontal CA client
                 clientNumber: $("#clientNumber").val(),
                 clientName: $("#clientName").val(),
@@ -229,13 +226,6 @@ define(["postmonger"], function (Postmonger) {
                     readOnly: false,
                 },
                 crmLeadId: {
-                    access: "Hidden",
-                    dataType: "text",
-                    direction: "In",
-                    isNullable: false,
-                    readOnly: false,
-                },
-                priority: {
                     access: "Hidden",
                     dataType: "text",
                     direction: "In",

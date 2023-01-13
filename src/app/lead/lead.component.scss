@@ -1,0 +1,68 @@
+// Estilos generales
+.form-container {
+    width: 50%;
+    text-align: left;
+}
+
+$background-color: #f1f1f1;
+$text-color: #333;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+}
+
+// Estilos para los elementos de formulario
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: $text-color;
+}
+
+// Estilos para los títulos
+h2 {
+    position: relative;
+    left: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+}
+
+// Estilos para contenedor
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+// Estilos para card container
+.card-container {
+    position: relative;
+    margin: 1rem;
+    min-width: 250px;
+    flex: 1;
+    text-align: left;
+    background-color: #ffffff;
+}
