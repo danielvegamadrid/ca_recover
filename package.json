@@ -7,7 +7,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "build": "ng build",
+    "build": "ng build --base-href=/leads/",
     "test": "npm run lint && ng test --noWatch --codeCoverage",
     "lint": "ng lint",
     "e2e": "ng e2e"
