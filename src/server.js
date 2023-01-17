@@ -11,7 +11,7 @@ const express = require('express');
 const app = express();
 app.use(express.static('./dist/'));
 app.get('/*', function (req, res) {
-    res.sendFile('dist/index.html', { root: './' }
+    res.sendFile('dist/index.html', { root: './leads' }
     );
 });
 app.listen(process.env.PORT || 8080);
