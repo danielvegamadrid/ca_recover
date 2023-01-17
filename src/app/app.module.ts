@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LeadComponent } from './lead/lead.component';
 
-const routes: Routes = [{ path: 'leads', component: LeadComponent }]
+const routes: Routes = [{ path: '', component: LeadComponent }]
 
 @NgModule({
   declarations: [
